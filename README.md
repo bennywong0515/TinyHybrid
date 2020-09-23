@@ -1,2 +1,8 @@
 # TinyHybrid
-Develop tiny hybrid apps with html, css and js
+Develop tiny hybrid apps with:
+HTML
+CSS
+JS
+Bootstrap
+JQuery
+...
