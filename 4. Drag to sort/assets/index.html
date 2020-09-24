@@ -1,0 +1,77 @@
+<link href="./bootstrap/assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="./fade.css" rel="stylesheet">
+<link href="./noselect.css" rel="stylesheet">
+<script src="./bootstrap/assets/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./jquery-3.5.1.slim.min.js"></script>
+<script src="./bootstrap/assets/dist/js/bootstrap.bundle.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="./ss/Sortable.js"></script>
+
+<div class="container">
+    <br>
+    <div class=" list-group" id="example1" style="width: 80%;">
+        <div class="list-group-item" style="width: 100%;">
+            <div class="card mb-3" style="box-shadow: 5px 5px 20px #555555;border:0;">
+                <img class="card-img-top" src="img/mad.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Card title 1</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="list-group-item" style="width: 100%;">
+            <div class="card mb-3" style="box-shadow: 5px 5px 20px #555555;border:0;">
+                <img class="card-img-top" src="img/mad.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Card title 2</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="list-group-item" style="width: 100%;">
+            <div class="card mb-3" style="box-shadow: 5px 5px 20px #555555;border:0;">
+                <img class="card-img-top" src="img/mad.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Card title 3</h3>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+</div>
+
+
+
+<script>
+var example1 = document.getElementById('example1');
+
+// Example 1 - Simple list
+new Sortable(example1, {
+	animation: 150,
+	ghostClass: 'blue-background-class'
+});
+
+function checkorder(){
+  array = [];
+  $('div','#example1').each(function(){
+      array.push($(this).attr('id')); 
+    });
+  alert( array );
+}
+
+</script>
